@@ -522,8 +522,8 @@ input, select, textarea {
 			.row {
 				display: flex;
 				flex-wrap: wrap;
-				box-sizing: border-box;
-				align-items: stretch;
+				box-sizing:border-box;
+				align-items:center;
 			}
 
 				.row > * {
@@ -559,7 +559,7 @@ input, select, textarea {
 				}
 
 				.row > .imp-wide {
-					order: -1;
+					order: -2;
 				}
 
 				.row > .col-1-wide {
@@ -676,8 +676,8 @@ input, select, textarea {
 						}
 
 				.row.gtr-25 {
-					margin-top: -10px;
-					margin-left: -10px;
+					margin-top: 0px;
+					margin-left: 0px;
 				}
 
 					.row.gtr-25 > * {
@@ -710,8 +710,8 @@ input, select, textarea {
 						}
 
 				.row {
-					margin-top: -40px;
-					margin-left: -40px;
+					margin-top: 0px;
+					margin-left: 0px;
 				}
 
 					.row > * {
@@ -1787,7 +1787,7 @@ input, select, textarea {
 
 		.image img {
 			display: block;
-			width: 100%;
+			width: 80%;
 		}
 
 		.image.fit {
@@ -2053,18 +2053,18 @@ input, select, textarea {
 	input[type="reset"],
 	button,
 	.button {
-		position: relative;
+		position:sticky;
 		display: inline-block;
-		background: #df7366;
+		/* background: #070707; */
 		color: #fff;
-		text-align: center;
+		text-align:center;
 		border-radius: 0.5em;
 		text-decoration: none;
 		padding: 0.65em 3em 0.65em 3em;
 		border: 0;
 		cursor: pointer;
-		outline: 0;
-		font-weight: 300;
+		outline: 0; 
+		font-weight: 600;
 		-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
@@ -2077,7 +2077,7 @@ input, select, textarea {
 		button:hover,
 		.button:hover {
 			color: #fff;
-			background: #ef8376;
+			background: rgb(243, 205, 123);
 		}
 
 		input[type="button"].alt,
@@ -2175,12 +2175,13 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		position: relative;
-		background-image: url("../../images/header.jpg");
+		position: web;
+		opacity: 0.9;
+		background-image: url("../../images/header1.jpeg");
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
-		color: #fff;
+		color: rgb(255, 251, 251);
 		text-align: center;
 		padding: 7.5em 0 2em 0;
 		cursor: default;
@@ -2222,8 +2223,10 @@ input, select, textarea {
 
 		#header .button {
 			display: inline-block;
+			/* border-style: groove; */
+			/* border-bottom-left-radius: 2em; */
 			border-radius: 100%;
-			width: 4.5em;
+			width: 8.5em;
 			height: 4.5em;
 			line-height: 4.5em;
 			text-align: center;
@@ -2265,18 +2268,18 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			opacity: 0;
-			-moz-transition: opacity 2.5s ease-in-out;
-			-webkit-transition: opacity 2.5s ease-in-out;
-			-ms-transition: opacity 2.5s ease-in-out;
-			transition: opacity 2.5s ease-in-out;
-			-moz-transition-delay: 0.5s;
-			-webkit-transition-delay: 0.5s;
-			-ms-transition-delay: 0.5s;
-			transition-delay: 0.5s;
+			-moz-transition: opacity 0s ease-in-out;
+			-webkit-transition: opacity 0s ease-in-out;
+			-ms-transition: opacity 0s ease-in-out;
+			transition: opacity0s ease-in-out;
+			-moz-transition-delay: 0s;
+			-webkit-transition-delay: 0s;
+			-ms-transition-delay: 0s;
+			transition-delay: 0s;
 		}
 
 	body.homepage.is-preload #header:after {
-		opacity: 1;
+		opacity: 0;
 	}
 
 /* Nav */
@@ -2459,7 +2462,7 @@ input, select, textarea {
 	#footer {
 		position: relative;
 		overflow: hidden;
-		padding: 6em 0 6em 0;
+		padding: 4em 0 4em 0;
 		background: #2b252c;
 		color: #fff;
 	}
@@ -3060,6 +3063,9 @@ input, select, textarea {
 				background-attachment: scroll;
 				padding: 2.5em 0 0 0;
 			}
+			img {
+				opacity: 0.5;
+			  }
 
 				#header .inner {
 					padding-top: 1.5em;
